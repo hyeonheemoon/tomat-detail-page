@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=860">
+<title>TOMAT! Juicy Blur Tint 제품 상세페이지 시안</title>
+<script>if(!/static/.test(location.search))document.documentElement.classList.add('js')</script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800;1,900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* =====================================================================
+   ★ 글자 설정 (여기 숫자만 바꾸면 전체에 반영돼요)
+   fs = 글자 크기(px) / lh = 행간(배수, 1 = 글자 크기와 같음) / ls = 자간(em)
+   주소 뒤에 ?tune 을 붙이면 슬라이더로 보면서 조절하고 값을 복사할 수 있어요.
+   ===================================================================== */
+:root{
+  --ls: -.02em;               /* 한글 자간 (전체) */
+
+  --fs-heroCopy: 84px;  --lh-heroCopy: .98;     /* 히어로 '잘 익은 생기 한 방울' */
+  --fs-helloH: 132px;    --lh-helloH: .95;       /* HELLO, TOMAT! */
+  --fs-helloP: 56px;     --lh-helloP: 1.22;      /* HELLO 소개글 */
+  --fs-filmH: 104px;     --lh-filmH: 1;          /* TOMAT! ON AIR */
+  --fs-filmSub: 52px;                            /* 영상 위 문구 */
+  --fs-colorTxt: 58px;   --lh-colorTxt: 1.15;    /* 컬러 설명 */
+  --fs-freshH: 158px;    --lh-freshH: .92;       /* JUICY & FRESH */
+  --fs-freshP: 54px;     --lh-freshP: 1.2;       /* JUICY & FRESH 설명 */
+  --fs-potTxt: 56px;     --lh-potTxt: 1.2;       /* 시그니처 팟 설명 */
+  --fs-mood1H: 124px;    --lh-mood1H: .98;       /* SO JUICY, SO YOU! */
+  --fs-mood1Sub: 54px;                           /* 모델 컷 위 문구 */
+  --fs-moodCap: 76px;    --lh-moodCap: 1.05;     /* 입술 위에 톡, ... */
+  --fs-moodSmall: 46px;                          /* 그 아래 작은 문구 */
+  --fs-kw: 30px;                                 /* Juicy/Blur/Fresh 설명 */
+  --fs-packH: 84px;      --lh-packH: 1.05;       /* 패키지 제목 */
+  --fs-packSub: 48px;    --lh-packSub: 1.2;      /* 패키지 설명 */
+  --fs-ctaT2: 100px;     --lh-ctaT2: 1;          /* 02 RIPE TOMATO */
+  --fs-ctaT3: 54px;      --lh-ctaT3: 1.2;        /* CTA 문구 */
+  --fs-btn: 46px;                                /* 버튼 글자 */
+  --fs-snd: 42px;                                /* 소리 켜기 스티커 */
+}
+@font-face{font-family:'Ongleip';src:url('assets/Ongleip-ParkDahyun.ttf') format('truetype');font-weight:100 900;font-display:block}
+:root{--red:#E31E25;--redd:#c1141b;--cream:#FBEFE8;--paper:#FFF8F2;--pink:#FADCD8;--pinkl:#FDEBE7;--ink:#3b1b17;
+--en:'Poppins','Noto Sans KR',sans-serif;--modu:'Ongleip','Noto Sans KR',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:var(--modu);font-weight:700;color:var(--ink);-webkit-font-smoothing:antialiased}
+img{display:block}
+.dp{width:860px;margin:0 auto;overflow:hidden}
+.sec{position:relative;width:860px;overflow:hidden}
+.abs{position:absolute}
+.center{left:0;width:860px;text-align:center}
+
+.checker{background:conic-gradient(var(--red) 25%,var(--cream) 0 50%,var(--red) 0 75%,var(--cream) 0) 0 0/80px 80px}
+.gingham{background-color:#fff6f1;background-image:linear-gradient(90deg,rgba(227,30,37,.5) 50%,transparent 50%),linear-gradient(rgba(227,30,37,.5) 50%,transparent 50%);background-size:32px 32px}
+.torn{clip-path:polygon(0 .6%,4% 0,9% .5%,15% 0,22% .4%,29% 0,36% .5%,43% 0,50% .4%,58% 0,65% .5%,72% 0,80% .4%,87% 0,94% .5%,100% 0,99.6% 30%,100% 62%,99.5% 100%,94% 99.5%,87% 100%,80% 99.6%,72% 100%,65% 99.5%,58% 100%,50% 99.6%,43% 100%,36% 99.5%,29% 100%,22% 99.6%,15% 100%,9% 99.5%,4% 100%,0 99.4%,.4% 66%,0 34%)}
+.tape{position:absolute;height:42px;background-color:rgba(255,248,242,.88);background-image:linear-gradient(90deg,rgba(227,30,37,.38) 50%,transparent 50%),linear-gradient(rgba(227,30,37,.38) 50%,transparent 50%);background-size:14px 14px;z-index:5}
+.logo{font-family:var(--en);font-style:italic;font-weight:900;color:var(--red);letter-spacing:-.045em;line-height:1;display:inline-block;position:relative}
+.logo::before{content:"";position:absolute;left:10%;top:-.46em;width:1em;height:.55em;background:var(--red);clip-path:polygon(0 70%,30% 40%,35% 0,50% 35%,75% 10%,70% 45%,100% 55%,68% 62%,58% 100%,45% 70%,18% 90%)}
+.en{font-family:var(--en);font-style:italic;font-weight:900;color:var(--red);letter-spacing:-.05em}
+.star{position:absolute;color:var(--red);z-index:6}
+/* 색연필 밑줄: 삐뚤빼뚤한 선 + 거친 가장자리 + 결 */
+:root{--pencil:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 24' preserveAspectRatio='none'%3E%3Cdefs%3E%3Cfilter id='p' x='-5%25' y='-60%25' width='110%25' height='220%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='2' seed='3' result='n'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='n' scale='5' result='d'/%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.6 .9' numOctaves='1' seed='8' result='g'/%3E%3CfeColorMatrix in='g' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2.4 2.1' result='ga'/%3E%3CfeComposite in='d' in2='ga' operator='in'/%3E%3C/filter%3E%3C/defs%3E%3Cg fill='none' stroke='%23E31E25' stroke-linecap='round' filter='url(%23p)'%3E%3Cpath d='M5 13 C60 8 120 17 180 11 S270 13 295 9' stroke-width='7' opacity='.9'/%3E%3Cpath d='M9 17 C70 13 140 20 200 14 S265 16 291 13' stroke-width='4' opacity='.6'/%3E%3C/g%3E%3C/svg%3E")}
+.ul-b{display:inline;padding:0 .06em .22em;background:var(--pencil) no-repeat 0 100%/100% .55em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.pl{background:#fff;padding:16px;box-shadow:0 8px 18px rgba(120,30,30,.16)}
+.pl img{width:100%;height:100%;object-fit:cover}
+
+/* 1 HERO */
+.hero{height:1180px;background:var(--pink)}
+.hero .photo{left:0;bottom:0;width:860px;-webkit-mask-image:linear-gradient(transparent 0,#000 22%);mask-image:linear-gradient(transparent 0,#000 22%)}
+.hero .paper{left:130px;top:96px;width:600px;height:290px;background:var(--paper);transform:rotate(-2.5deg);text-align:center;z-index:3}
+.hero .paper .logo{font-size:128px;margin-top:84px;transform:rotate(-4deg)}
+.hero .paper .sub{font-family:var(--en);font-style:italic;font-weight:800;font-size:32px;color:var(--red);margin-top:4px;letter-spacing:var(--ls)}
+.hero .nbl{left:96px;top:60px;transform:rotate(-5deg);background:rgba(236,210,170,.97);padding:10px 30px;font-family:var(--en);font-style:italic;font-weight:800;font-size:26px;color:var(--redd);z-index:6}
+.hero .copy{top:408px;transform:rotate(-2deg);z-index:4}
+.hero .copy p{font-size:var(--fs-heroCopy);line-height:var(--lh-heroCopy);color:var(--red);letter-spacing:var(--ls)}
+.hero .copy i{display:block;width:420px;height:30px;margin:2px auto 0;background:var(--pencil) center/100% 100% no-repeat;transform:rotate(-1deg)}
+
+/* 2 HELLO */
+.hello{height:1180px}
+.hello .card{left:40px;top:40px;width:780px;height:1100px;background:var(--paper)}
+.hello h2{left:96px;top:110px;font-size:var(--fs-helloH);line-height:var(--lh-helloH);transform:rotate(-3deg);transform-origin:left}
+.hello p{left:96px;top:410px;width:700px;font-size:var(--fs-helloP);line-height:var(--lh-helloP);letter-spacing:var(--ls)}
+.hello .cut{left:92px;top:740px;width:676px;height:340px;transform:rotate(2deg);border:10px solid #fff;border-radius:44% 38% 42% 46%/48% 42% 46% 40%;overflow:hidden;box-shadow:0 6px 14px rgba(120,20,20,.2);z-index:2}
+.hello .cut img{width:100%;height:100%;object-fit:cover}
+.hello .stamp{right:60px;top:960px;width:160px;height:160px;border-radius:50%;background:#fff;border:5px solid var(--red);display:flex;align-items:center;justify-content:center;transform:rotate(8deg);z-index:7}
+.hello .stamp .logo{font-size:38px}
+.hello .stamp .logo::before{display:none}
+
+/* FILM */
+.film{height:960px;background:var(--red)}
+.film h2{top:96px;font-size:var(--fs-filmH);line-height:var(--lh-filmH);letter-spacing:-.05em;color:#fff;transform:rotate(-2deg)}
+.film .sub{top:236px;font-size:var(--fs-filmSub);color:#fff;letter-spacing:var(--ls)}
+.film .tv{left:36px;top:350px;width:788px;background:var(--paper);padding:14px;transform:rotate(-1deg);cursor:pointer}
+.film .tv video{width:100%;aspect-ratio:16/9;background:#000;object-fit:cover}
+.film .tv .tape{top:-20px;left:300px;width:170px;transform:rotate(3deg)}
+.film .snd{left:530px;top:760px;background:var(--paper);color:var(--red);border:4px solid var(--red);border-radius:60px;padding:8px 34px 10px;font-size:var(--fs-snd);transform:rotate(3deg);cursor:pointer;z-index:8;line-height:1.2;letter-spacing:var(--ls)}
+.film .gband{left:0;bottom:0;width:860px;height:48px}
+
+/* 3 COLOR */
+.color{height:1270px;background:var(--pinkl)}
+.color .tag{left:80px;top:90px;background:var(--red);color:#fff;font-family:var(--en);font-style:italic;font-weight:800;font-size:36px;padding:12px 32px;transform:rotate(-3deg);z-index:3}
+.color .pol{left:80px;top:200px;width:700px;height:520px;transform:rotate(-2deg);padding:18px}
+.color .pol div{width:100%;height:100%;background:url('image 1.png') 100% 100%/200% 200% no-repeat}
+.color .pol .tape{top:-22px;left:60px;width:170px;transform:rotate(-4deg)}
+.color .txt{top:772px;font-size:var(--fs-colorTxt);line-height:var(--lh-colorTxt);letter-spacing:var(--ls)}
+.color .gel{left:0;top:1000px;width:860px;height:270px;object-fit:cover;object-position:35% 45%;clip-path:polygon(0 14%,20% 0,45% 10%,70% 0,100% 12%,100% 100%,0 100%)}
+.color .star.a{right:90px;top:84px;width:70px}
+
+/* 4 FRESH */
+.fresh{height:1200px;background:var(--pink)}
+.fresh h2{left:72px;top:96px;font-size:var(--fs-freshH);line-height:var(--lh-freshH);transform:rotate(-4deg);transform-origin:left;z-index:3}
+.fresh .ul{left:80px;top:420px;width:600px;height:36px;background:var(--pencil) center/100% 100% no-repeat;transform:rotate(-2deg)}
+.fresh p{left:80px;top:490px;font-size:var(--fs-freshP);line-height:var(--lh-freshP);letter-spacing:var(--ls);z-index:3}
+.fresh .pic{left:0;top:660px;width:860px;height:540px;object-fit:cover;object-position:50% 72%;clip-path:polygon(0 8%,18% 0,40% 6%,62% 0,82% 7%,100% 0,100% 100%,0 100%)}
+
+/* 5 POT */
+.pot{height:1280px;background:var(--paper)}
+.pot .lab{left:150px;top:110px;background:#f1dfca;padding:44px 52px 34px;transform:rotate(-3deg);z-index:3}
+.pot .lab .tape{top:-22px;right:-46px;width:150px;transform:rotate(14deg)}
+.pot .lab .en{font-size:58px;line-height:1.08;white-space:nowrap}
+.pot .txt{top:370px;font-size:var(--fs-potTxt);line-height:var(--lh-potTxt);letter-spacing:var(--ls);word-break:keep-all}
+.pot .img{left:0;top:640px;width:860px;height:640px;object-fit:cover;object-position:55% 62%}
+.pot .tom{right:50px;bottom:44px;width:180px;height:180px;border-radius:50%;object-fit:cover;object-position:82% 50%;border:8px solid #fff;box-shadow:0 4px 10px rgba(0,0,0,.2);transform:rotate(6deg)}
+
+/* MOOD 1 */
+.mood1{height:1200px;background:var(--red)}
+.mood1 h2{top:100px;font-size:var(--fs-mood1H);line-height:var(--lh-mood1H);letter-spacing:-.05em;color:#fff;transform:rotate(-2deg)}
+.mood1 .sub{top:372px;font-size:var(--fs-mood1Sub);color:#fff;letter-spacing:var(--ls)}
+.mood1 .tri{left:36px;top:480px;width:788px;background:var(--paper);padding:14px;transform:rotate(.8deg)}
+.mood1 .tri img{width:100%}
+.mood1 .tri .tape{top:-20px;left:330px;width:170px;transform:rotate(-3deg)}
+
+/* MOOD 2 */
+.mood2{height:1480px;background:var(--pinkl)}
+.mood2 .cap{top:110px;font-size:var(--fs-moodCap);line-height:var(--lh-moodCap);letter-spacing:var(--ls);color:var(--red)}
+.mood2 .cap small{display:block;font-size:var(--fs-moodSmall);color:var(--ink);margin-top:14px;letter-spacing:var(--ls)}
+.mood2 .a{left:70px;top:420px;width:480px;height:620px;transform:rotate(-2.5deg)}
+.mood2 .a .tape{top:-22px;left:150px;width:150px;transform:rotate(-5deg)}
+.mood2 .b{left:380px;top:800px;width:420px;height:330px;transform:rotate(2deg);z-index:3}
+.mood2 .kw{top:1220px;width:244px;height:170px;background:var(--red);color:#fff;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.mood2 .kw b{font-family:var(--en);font-style:italic;font-weight:900;font-size:42px;letter-spacing:-.04em;line-height:1}
+.mood2 .kw span{font-size:var(--fs-kw);margin-top:8px;letter-spacing:var(--ls)}
+
+/* 6 PICNIC */
+.picnic{height:800px}
+.picnic img{width:860px;height:800px;object-fit:cover;object-position:45% 55%}
+
+/* PACKAGE */
+.pack{height:1800px;background:var(--pinkl)}
+.pack h2{top:100px;font-size:var(--fs-packH);line-height:var(--lh-packH);letter-spacing:var(--ls);font-weight:700}
+.pack h2 em{font-style:normal;color:var(--red)}
+.pack .sub{top:290px;font-size:var(--fs-packSub);line-height:var(--lh-packSub);letter-spacing:var(--ls)}
+.pack .m{left:120px;top:520px;width:620px;height:780px;transform:rotate(-1.5deg)}
+.pack .m .tape{top:-22px;left:230px;width:170px;transform:rotate(3deg)}
+.pack .p{left:60px;top:1350px;width:370px;height:400px;transform:rotate(2deg)}
+.pack .d{left:460px;top:1360px;width:340px;height:340px;transform:rotate(-2deg)}
+
+/* 7 CTA */
+.cta{height:1290px;background:var(--paper)}
+.cta .t1{top:96px;font-size:36px}
+.cta .t2{top:156px;font-size:var(--fs-ctaT2);line-height:var(--lh-ctaT2)}
+.cta .t3{top:290px;font-size:var(--fs-ctaT3);line-height:var(--lh-ctaT3);letter-spacing:var(--ls)}
+.cta .arr{left:380px;top:530px;width:110px;color:var(--red)}
+.cta .ph{left:0;top:470px;width:860px;-webkit-mask-image:linear-gradient(transparent 0,#000 18%);mask-image:linear-gradient(transparent 0,#000 18%)}
+.cta .bar{left:0;bottom:0;width:860px;height:140px;background:var(--red);z-index:4;display:flex;align-items:center;justify-content:center}
+.cta .btn{background:var(--cream);color:var(--red);font-size:var(--fs-btn);letter-spacing:var(--ls);padding:24px 84px 26px;border-radius:80px}
+.cta .gband{left:0;bottom:140px;width:860px;height:48px;z-index:3}
+
+/* ===== 인터랙션 ===== */
+.js .pp{opacity:0;scale:.6;translate:0 40px;transition:opacity .5s ease,scale .75s cubic-bezier(.34,1.56,.64,1),translate .75s cubic-bezier(.34,1.56,.64,1)}
+.js .sec.in .pp{opacity:1;scale:1;translate:0 0}
+@keyframes wig{0%,100%{rotate:0deg}25%{rotate:-5deg}50%{rotate:4deg}75%{rotate:-3deg}}
+@keyframes squish{0%{scale:1 1}30%{scale:1.25 .72}60%{scale:.88 1.15}100%{scale:1 1}}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -12px}}
+@keyframes ulin{from{scale:0 1}to{scale:1 1}}
+@keyframes pulse{0%,100%{scale:1}50%{scale:1.06}}
+.pl:hover,.tv:hover,.stamp:hover,.lab:hover,.tag:hover,.cut:hover,.hero .copy:hover,.snd:hover{animation:wig .6s ease}
+.kw{cursor:pointer;user-select:none}
+.kw.sq{animation:squish .55s}
+.star{animation:bob 2.4s ease-in-out infinite}
+.hero .copy i,.fresh .ul{transform-origin:left;animation:ulin .9s .5s both cubic-bezier(.3,1.3,.5,1)}
+.cta .btn{display:inline-block;cursor:pointer;animation:pulse 1.7s ease-in-out infinite;user-select:none}
+.cta .btn:active{scale:.94;animation:none}
+.bit{position:fixed;width:34px;height:34px;pointer-events:none;z-index:99}
+.bit svg{width:100%;height:100%;display:block}
+html:not(.js) *{animation:none!important}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.js .pp{opacity:1;scale:1;translate:0 0;transition:none}}
+</style>
+</head>
+<body>
+<div class="dp">
+
+<!-- 1. HERO -->
+<section class="sec hero">
+  <img class="abs photo" src="high-end_beauty_campaign_product_photography_for_tomat_juicy_blur_tint_one_glossy_vivid_tomato-red__z7d4z7tkwuanlnn17vw4_0.jpeg" alt="TOMAT! Juicy Blur Tint">
+  <div class="abs paper torn"><div class="logo">TOMAT!</div><div class="sub">Juicy Blur Tint</div></div>
+  <div class="abs nbl">NEW BRAND LAUNCH</div>
+  <div class="abs center copy"><p>잘 익은<br>생기 한 방울</p><i></i></div>
+  <svg class="star" style="left:46px;top:470px;width:70px" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M20 2l4 12 12-4-8 10 10 8-13 1 1 13-8-10-8 10 1-13-13-1 10-8L4 10l12 4z"/></svg>
+  <svg class="star" style="right:50px;top:96px;width:60px" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M20 2l4 12 12-4-8 10 10 8-13 1 1 13-8-10-8 10 1-13-13-1 10-8L4 10l12 4z"/></svg>
+</section>
+
+<!-- 2. HELLO, TOMAT! -->
+<section class="sec hello checker">
+  <div class="abs card torn"></div>
+  <h2 class="abs en">HELLO,<br>TOMAT!</h2>
+  <p class="abs">토마티(TOMAT!)는<br>토마토처럼 싱그럽고 생기 있는 컬러로,<br><span class="ul-b">일상에 작은 활력</span>을 더하는<br><span class="ul-b">메이크업 브랜드</span>입니다.</p>
+  <div class="abs cut"><img src="playful_conceptual_beauty_campaign_photography_overhead_flat_lay_of_twelve_real_ripe_red_cherry_tom_sf0knbwp1tgrwh4c2072_0.jpeg" alt=""></div>
+  <div class="abs stamp"><span class="logo">TOMAT!</span></div>
+</section>
+
+<!-- FILM -->
+<section class="sec film">
+  <h2 class="abs center en" style="color:#fff">TOMAT! ON AIR</h2>
+  <p class="abs center sub">움직이는 토마티를 만나보세요</p>
+  <div class="abs tv" id="tv"><span class="tape"></span>
+    <video id="film" src="assets/tomat_film.mp4" muted loop playsinline preload="auto"></video>
+  </div>
+  <span class="abs snd" id="snd">소리 켜기</span>
+  <div class="abs gband gingham"></div>
+</section>
+
+<!-- 3. 02 RIPE TOMATO -->
+<section class="sec color">
+  <div class="abs tag">02 RIPE TOMATO</div>
+  <svg class="star a" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M20 2l4 12 12-4-8 10 10 8-13 1 1 13-8-10-8 10 1-13-13-1 10-8L4 10l12 4z"/></svg>
+  <div class="abs pl pol"><span class="tape"></span><div></div></div>
+  <p class="abs center txt">토마토가 잘 익었을 때의<br><span class="ul-b">싱그럽고 선명한 레드</span></p>
+  <img class="abs gel" src="토마토 용기와 윤기 나는 레드 젤.png" alt="02 Ripe Tomato 텍스처">
+</section>
+
+<!-- 4. JUICY & FRESH -->
+<section class="sec fresh">
+  <h2 class="abs en">JUICY &amp;<br>FRESH</h2>
+  <div class="abs ul"></div>
+  <p class="abs">촉촉하게 퍼지는<br>촉촉하고 부드러운 블러 텍스처</p>
+  <img class="abs pic" src="물방울 속 토마토 글로시 케어.png" alt="">
+</section>
+
+<!-- 5. SIGNATURE POT -->
+<section class="sec pot">
+  <div class="abs lab"><span class="tape"></span><div class="en">TOMAT!<br>SIGNATURE POT</div></div>
+  <p class="abs center txt">한눈에 반하는<br>토마토 모양의 리미티드 팟으로<br>더 특별하게.</p>
+  <img class="abs img" src="high-end_macro_product_photography_of_an_opened_tomat_juicy_blur_tint_tomato-shaped_cosmetic_contai_e1h18b36b15gjdedmxdd_0.jpeg" alt="토마토 모양 팟">
+  <img class="abs tom" src="clean_commercial_packaging_photography_of_tomat_juicy_blur_tint_one_perfectly_closed_glossy_bright__nehvt225e95v1vqj3cke_0.jpeg" alt="">
+</section>
+
+<!-- MOOD 1 -->
+<section class="sec mood1">
+  <h2 class="abs center en" style="color:#fff">SO JUICY,<br>SO YOU!</h2>
+  <p class="abs center sub">토마토 한 방울로 완성하는 촉촉한 생기 립</p>
+  <div class="abs tri"><span class="tape"></span><img src="image 3.png" alt="모델 컷"></div>
+</section>
+
+<!-- MOOD 2 -->
+<section class="sec mood2">
+  <p class="abs center cap">입술 위에 톡,<br>잘 익은 토마토 한 알<small>가볍게 발라도 생기 가득한 립</small></p>
+  <div class="abs pl a"><span class="tape"></span><img src="image 2.png" alt=""></div>
+  <div class="abs pl b"><img src="토마토 글로우 뷰티 에디토리얼.png" alt=""></div>
+  <div class="abs kw" style="left:60px"><b>Juicy</b><span>촉촉한 윤기</span></div>
+  <div class="abs kw" style="left:308px"><b>Blur</b><span>몽글한 번짐</span></div>
+  <div class="abs kw" style="left:556px"><b>Fresh</b><span>싱그러운 레드</span></div>
+</section>
+
+<!-- 6. PICNIC -->
+<section class="sec picnic">
+  <img src="토마토 틴트와 싱그러운 피크닉 테이블.png" alt="피크닉 테이블 위의 토마티">
+</section>
+
+<!-- PACKAGE -->
+<section class="sec pack">
+  <h2 class="abs center">보는 순간 <em>콜렉팅</em> 하고 싶은<br>토마티 패키지</h2>
+  <p class="abs center sub">레트로 깅엄 체크와 스크랩북 스티커로 가득 채운<br>작은 피크닉 박스</p>
+  <div class="abs pl m"><span class="tape"></span><img src="ChatGPT 이미지 2026년 11월 23일 오후 05_02_15.png" alt="깅엄 패키지 박스와 피크닉 백"></div>
+  <div class="abs pl p"><img src="ChatGPT 이미지 2026년 11월 23일 오후 05_05_56.png" alt="토마티 파우치"></div>
+  <div class="abs pl d"><img src="assets/keyring.webp" alt="토마티 키링"></div>
+</section>
+
+<!-- 7. CTA -->
+<section class="sec cta">
+  <div class="abs center t1 en">TOMAT! Juicy Blur Tint</div>
+  <div class="abs center t2 en">02 RIPE TOMATO</div>
+  <p class="abs center t3">잘 익은 토마토 한 방울로<br>생기 가득한 립을 완성해 보세요.</p>
+  <img class="abs ph" src="clean_commercial_packaging_photography_of_tomat_juicy_blur_tint_one_perfectly_closed_glossy_bright__nehvt225e95v1vqj3cke_0.jpeg" alt="">
+  <div class="abs gband gingham"></div>
+  <div class="abs bar"><span class="btn">지금, 토마티를 만나보세요 &nbsp;&gt;</span></div>
+</section>
+
+</div>
+<script>
+(function(){
+  var de=document.documentElement, st=!de.classList.contains('js');
+  var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var secs=[].slice.call(document.querySelectorAll('.sec'));
+
+  /* 1) 스크롤하면 통통 튀며 등장 */
+  if(!st){
+    secs.forEach(function(s){
+      var n=0;
+      [].forEach.call(s.querySelectorAll('.abs'),function(e){
+        if(e.matches('.photo,.img,.pic,.card,.gband,.bar,.ph,.gel'))return;
+        e.classList.add('pp'); e.style.transitionDelay=(n++*90)+'ms';
+      });
+    });
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+      secs.forEach(function(s){io.observe(s)});
+    }else secs.forEach(function(s){s.classList.add('in')});
+  }
+
+  /* 2) 영상 */
+  var v=document.getElementById('film'), b=document.getElementById('snd'), tv=document.getElementById('tv');
+  if(st){ v.addEventListener('loadeddata',function(){v.pause();v.currentTime=.4}); }
+  else if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){es.forEach(function(x){ if(x.isIntersecting){v.play().catch(function(){})}else v.pause() })},{threshold:.35}).observe(v);
+  }
+  tv.addEventListener('click',function(){ v.paused?v.play():v.pause() });
+  b.addEventListener('click',function(e){
+    e.stopPropagation(); v.muted=!v.muted;
+    b.textContent=v.muted?'소리 켜기':'소리 끄기';
+    if(!v.muted)v.play().catch(function(){});
+  });
+
+  /* 3) 클릭하면 토마토·하트·별이 팡! */
+  var ICONS=[
+    '<svg viewBox="0 0 34 34"><circle cx="17" cy="19" r="12" fill="#E31E25"/><path d="M17 7l-5 3 4 1-3 3 4-2 4 2-3-3 4-1z" fill="#4c9a3a"/><ellipse cx="12.5" cy="15" rx="3" ry="2" fill="#fff" opacity=".55"/></svg>',
+    '<svg viewBox="0 0 34 34"><path d="M17 30C5 21 3 14 5 10c3-6 10-5 12 0 2-5 9-6 12 0 2 4 0 11-12 20z" fill="#ff5a63"/></svg>',
+    '<svg viewBox="0 0 34 34"><path d="M17 3l4 10 10-3-7 8 8 7-11 0 1 10-5-9-5 9 1-10-11 0 8-7-7-8 10 3z" fill="none" stroke="#E31E25" stroke-width="2.4" stroke-linejoin="round"/></svg>'
+  ];
+  function burst(x,y,n){
+    if(rm)return;
+    for(var i=0;i<n;i++){
+      var el=document.createElement('div'); el.className='bit';
+      el.innerHTML=ICONS[(Math.random()*ICONS.length)|0];
+      el.style.left=(x-17)+'px'; el.style.top=(y-17)+'px';
+      document.body.appendChild(el);
+      var a=Math.random()*Math.PI*2, d=70+Math.random()*110, dx=Math.cos(a)*d, dy=Math.sin(a)*d-50, r=(Math.random()*240-120)|0;
+      el.animate([
+        {transform:'translate(0,0) scale(.3) rotate(0deg)',opacity:1},
+        {transform:'translate('+dx+'px,'+dy+'px) scale(1.1) rotate('+r+'deg)',opacity:1,offset:.55},
+        {transform:'translate('+dx*1.15+'px,'+(dy+90)+'px) scale(.8) rotate('+r*1.4+'deg)',opacity:0}
+      ],{duration:950+Math.random()*350,easing:'cubic-bezier(.2,.7,.4,1)'}).onfinish=(function(e){return function(){e.remove()}})(el);
+    }
+  }
+  document.addEventListener('click',function(e){ burst(e.clientX,e.clientY,7) });
+
+  /* 4) CTA 버튼: 토마토 비 */
+  var btn=document.querySelector('.cta .btn');
+  btn.addEventListener('click',function(e){
+    e.stopPropagation();
+    var r=btn.getBoundingClientRect();
+    for(var k=0;k<4;k++)setTimeout(function(){burst(r.left+Math.random()*r.width,r.top+10,9)},k*130);
+  });
+
+  /* 5) 키워드 동그라미: 누르면 말랑 */
+  [].forEach.call(document.querySelectorAll('.kw'),function(k){
+    k.addEventListener('click',function(){k.classList.remove('sq');void k.offsetWidth;k.classList.add('sq')});
+  });
+
+  /* 6) HELLO 스탬프: 스크롤하면 빙글 (살짝만 흔들리게) */
+  var stamp=document.querySelector('.stamp'), tick=false;
+  function spin(){ stamp.style.rotate=(Math.sin(window.scrollY/160)*25)+'deg'; tick=false }
+  if(!st&&!rm)window.addEventListener('scroll',function(){ if(!tick){tick=true;requestAnimationFrame(spin)} },{passive:true});
+
+  /* 7) ?tune : 글자 설정 슬라이더 */
+  if(/tune/.test(location.search)){
+    var root=document.documentElement, cs=getComputedStyle(root);
+    var defs=[], rule=null;
+    [].forEach.call(document.styleSheets,function(sh){try{[].forEach.call(sh.cssRules,function(x){if(x.selectorText===':root'&&x.style.getPropertyValue('--ls'))rule=x})}catch(e){}});
+    for(var i=0;i<rule.style.length;i++){var kk=rule.style[i]; if(kk.indexOf('--fs-')===0||kk.indexOf('--lh-')===0||kk==='--ls')defs.push(kk)}
+    var box=document.createElement('div');
+    box.style.cssText='position:fixed;right:10px;top:10px;width:290px;max-height:92vh;overflow:auto;background:#fff;border:2px solid #E31E25;border-radius:12px;padding:10px 12px;z-index:300;font:13px/1.35 sans-serif;font-weight:400;color:#222;box-shadow:0 6px 20px rgba(0,0,0,.25)';
+    var head=document.createElement('div');head.style.cssText='font-weight:700;color:#E31E25;cursor:pointer;margin-bottom:6px';head.textContent='글자 설정 (눌러서 접기/펼치기)';
+    var body=document.createElement('div');
+    head.onclick=function(){body.style.display=body.style.display==='none'?'':'none'};
+    box.appendChild(head);box.appendChild(body);
+    var rows={};
+    var NAMES={heroCopy:'히어로 카피',helloH:'HELLO 제목',helloP:'HELLO 소개글',filmH:'ON AIR 제목',filmSub:'영상 문구',colorTxt:'컬러 설명',freshH:'JUICY&FRESH 제목',freshP:'JUICY&FRESH 설명',potTxt:'팟 설명',mood1H:'SO JUICY 제목',mood1Sub:'모델 문구',moodCap:'입술 위에 톡',moodSmall:'그 아래 작은 글',kw:'키워드 설명',packH:'패키지 제목',packSub:'패키지 설명',ctaT2:'02 RIPE TOMATO',ctaT3:'CTA 문구',btn:'버튼',snd:'소리 켜기'};
+    defs.forEach(function(k){
+      var type=k==='--ls'?'ls':(k.indexOf('--fs-')===0?'fs':'lh');
+      var cfg=type==='fs'?{min:16,max:220,step:1,u:'px'}:type==='lh'?{min:.7,max:2,step:.01,u:''}:{min:-.1,max:.1,step:.005,u:'em'};
+      var cur=parseFloat(cs.getPropertyValue(k));
+      var id=k.replace('--fs-','').replace('--lh-','');
+      var row=document.createElement('label');row.style.cssText='display:block;margin:5px 0';
+      var t=document.createElement('span');t.textContent=(type==='fs'?'크기 · ':type==='lh'?'행간 · ':'자간 · ')+(type==='ls'?'한글 전체':(NAMES[id]||id));
+      var v=document.createElement('b');v.style.cssText='float:right;color:#E31E25';
+      var inp=document.createElement('input');inp.type='range';inp.min=cfg.min;inp.max=cfg.max;inp.step=cfg.step;inp.value=cur;inp.style.cssText='width:100%;display:block';
+      inp.oninput=function(){v.textContent=inp.value+cfg.u;root.style.setProperty(k,inp.value+cfg.u)};
+      v.textContent=cur+cfg.u;
+      row.appendChild(t);row.appendChild(v);row.appendChild(inp);body.appendChild(row);rows[k]=[inp,cfg];
+    });
+    var out=document.createElement('textarea');out.style.cssText='width:100%;height:90px;margin-top:6px;font:11px monospace';out.readOnly=true;
+    var btn=document.createElement('button');btn.textContent='현재 값 복사';btn.style.cssText='margin-top:8px;padding:8px 12px;background:#E31E25;color:#fff;border:0;border-radius:8px;font-weight:700;cursor:pointer;width:100%';
+    btn.onclick=function(){
+      var t=defs.map(function(k){var r=rows[k];return '  '+k+': '+r[0].value+r[1].u+';'}).join('\n');
+      out.value=':root{\n'+t+'\n}';out.select();
+      try{navigator.clipboard.writeText(out.value);btn.textContent='복사됨! (채팅에 붙여넣어 주세요)'}catch(e){document.execCommand('copy')}
+    };
+    body.appendChild(btn);body.appendChild(out);document.body.appendChild(box);
+  }
+})();
+</script>
+</body>
+</html>
